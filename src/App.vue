@@ -19,15 +19,18 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower");
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
 }
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower");
 
 * {
   padding: 5px;
@@ -45,8 +48,7 @@ body {
 body {
   display: grid;
   background-color: black;
-  background-image: url(https://i.imgur.com/5RoPD1Z.jpg);
-
+  background-image: url("https://i.imgur.com/5RoPD1Z.jpg");
   background-size: cover;
   height: 1000px;
   z-index: 0;
@@ -63,6 +65,95 @@ header {
 footer > h2 {
   color: rgb(255, 255, 181);
 }
+
+#home {
+  text-align: center;
+}
+
+#home > img {
+  width: 500px;
+  height: 400px;
+  /* border: 5px rgb(46, 46, 46) dotted; */
+  box-shadow: 800px 1200px #555;
+  box-shadow: 5px 5px 5px black;
+  padding: 0px;
+  text-align: center;
+}
+
+#forms {
+  display: inline-block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#fbutton {
+  
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px 15px;
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  width: 20vw;
+  max-width: 25vw;
+  height: 20vh;
+  max-height: 30vw;
+  border: 4px darkgrey solid;
+  border-radius: 15px;
+  color: black;
+  background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
+}
+
+#wbutton {
+  
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px 15px;
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  width: 20vw;
+  max-width: 25vw;
+  height: 20vh;
+  max-height: 30vw;
+  border: 4px darkgrey solid;
+  border-radius: 15px;
+  color: black;
+  background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
+}
+
+.content {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+#navigation > a {
+  text-decoration: none;
+  color: black;
+}
+
+#navigation a:hover {
+  display: flexbox;
+  color: grey;
+  transition: 500ms;
+  align-content: space-between;
+}
+
+#navigation {
+  font-size: 5vw;
+  text-decoration: none;
+}
+
 /*
 .button {
     display: inline-block;
@@ -98,71 +189,4 @@ footer > h2 {
 .buttonselector > button {
     cursor: pointer;
 } */
-
-#forms {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 5px 15px;
-  border: 0 none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-
-#submit2 {
-  cursor: pointer;
-  font-size: 50px;
-  width: 20vw;
-  max-width: 25vw;
-  height: 20vh;
-  max-height: 30vw;
-  border: 4px darkgrey solid;
-  border-radius: 15px;
-  color: black;
-  background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
-}
-
-.container {
-  padding: 0px;
-}
-.container > img {
-  box-shadow: 5px 5px 5px black;
-  padding: 0px;
-}
-
-.content {
-  display: grid;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-}
-
-.content > img {
-  width: 500px;
-  height: 400px;
-  border: 5px rgb(46, 46, 46) dotted;
-  /* -o-box-shadow:      12px 12px 29px #555;
-    -icab-box-shadow:   12px 12px 29px #555;
-    -khtml-box-shadow:  12px 12px 29px #555;
-    -moz-box-shadow:    12px 12px 29px #555;
-    -webkit-box-shadow: 12px 12px 29px #555; */
-  box-shadow: 800px 1200px #555;
-}
-
-#navigation > a {
-  text-decoration: none;
-  color: black;
-}
-
-#navigation a:hover {
-  display: flexbox;
-  color: grey;
-  transition: 500ms;
-  align-content: space-between;
-}
-
-#navigation {
-  font-size: 5vw;
-  text-decoration: none;
-}
 </style>
