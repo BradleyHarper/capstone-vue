@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <div id="navigation">
-      <router-link to="home">Home</router-link>
+      <router-link to="/">Home</router-link>
       <router-link to="instructions">Instructions</router-link>
       <router-link to="contact">Contact</router-link>
     </div>
     <header>
       <h1>Sky pet</h1>
     </header>
+    <transition name="anim" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown">
     <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -20,6 +22,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.js");
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -43,6 +46,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: bisque;
 }
 
 body {
@@ -63,8 +67,13 @@ header {
 }
 
 footer > h2 {
-  color: rgb(255, 255, 181);
+  /* color: rgb(255, 255, 181); */
+  color: rgb(109, 109, 109);
 }
+/* .page {
+  position: fixed;
+  width: inherit;
+} */
 
 #home {
   text-align: center;

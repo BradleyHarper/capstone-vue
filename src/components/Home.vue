@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home" class="page">
     <img
       style="-webkit-user-select: none;"
       src="http://71.11.135.22:8081/"
@@ -12,6 +12,15 @@
 
       <form id="food" method="POST" action="http://71.11.135.22:3000/api/servo2/sml">
         <input id="fbutton" type="submit" value="Feed">
+      </form>
+    </div>
+    <div id="lightbulb">
+      <form id="lightOn" action="http://71.11.135.22:3000/api/led/on" method="POST">
+      <input id="lightOnButton" type="submit" value="Lights on!">
+      </form>
+
+      <form id="lightOff" action="http://71.11.135.22:3000/api/led/off" method="POST">
+      <input id="lightOffButton" type="submit" value="Lights off!">
       </form>
     </div>
     <div class="buttonselector">
