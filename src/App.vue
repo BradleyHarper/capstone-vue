@@ -8,14 +8,18 @@
     <header>
       <h1>Sky pet</h1>
     </header>
-    <transition name="anim" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown">
-    <router-view/>
+    <transition
+      name="anim"
+      enter-active-class="animated fadeInDown"
+      leave-active-class="animated fadeOutDown"
+    >
+      <router-view/>
     </transition>
     <footer>
       <div>
-      <h2>Please, if you have any questions please feel free to contact me or visit the community forum!</h2>
-    </div> 
-  </footer>
+        <h2>Please, if you have any questions please feel free to contact me or visit the community forum!</h2>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -55,6 +59,7 @@ body {
 }
 
 body {
+  border: 5px dotted black;
   display: grid;
   background-color: black;
   background-image: url("https://i.imgur.com/5RoPD1Z.jpg");
@@ -78,7 +83,7 @@ p {
 footer {
   color: black;
   border: solid black 5px;
-  background-color: rgb(255, 228, 196, 0.8);
+  background-color: rgb(255, 228, 196);
 }
 
 #app > div > h1 {
@@ -121,10 +126,11 @@ footer {
   max-width: 25vw;
   height: 20vh;
   max-height: 30vw;
-  border: 4px darkgrey solid;
+  border: 5px black solid;
   border-radius: 15px;
   color: black;
   background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
+  outline: black;
 }
 
 #wbutton {
@@ -142,10 +148,11 @@ footer {
   max-width: 25vw;
   height: 20vh;
   max-height: 30vw;
-  border: 4px darkgrey solid;
+  border: 5px black solid;
   border-radius: 15px;
   color: black;
   background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
+  outline: black;
 }
 
 .content {

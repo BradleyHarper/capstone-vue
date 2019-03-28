@@ -7,7 +7,8 @@
     >
     <div id="forms">
       <form id="water" method="POST" action="http://71.11.135.22:3000/api/servo/sml">
-        <input id="wbutton" type="submit" value="Water">
+        <!--<button id="wbutton" onClick= somefunction() value="Water">-->
+          <input id="wbutton" type="submit" value="Water">
       </form>
 
       <form id="food" method="POST" action="http://71.11.135.22:3000/api/servo2/sml">
