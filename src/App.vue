@@ -11,6 +11,11 @@
     <transition name="anim" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown">
     <router-view/>
     </transition>
+    <footer>
+      <div>
+      <h2>Please, if you have any questions please feel free to contact me or visit the community forum!</h2>
+    </div> 
+  </footer>
   </div>
 </template>
 
@@ -46,7 +51,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 body {
@@ -63,18 +68,22 @@ header {
   line-height: 0%;
   margin: 0px;
   padding: 0px;
+  color: rgb(0, 0, 0);
+}
+
+p {
   color: black;
 }
 
-footer > h2 {
-  /* color: rgb(255, 255, 181); */
-  color: rgb(109, 109, 109);
+footer {
+  color: black;
+  border: solid black 5px;
+  background-color: rgb(255, 228, 196, 0.8);
 }
-/* .page {
-  position: fixed;
-  width: inherit;
-} */
 
+#app > div > h1 {
+  position: relative;
+}
 #home {
   text-align: center;
 }
@@ -98,7 +107,7 @@ footer > h2 {
 }
 
 #fbutton {
-  
+  min-width: 150px;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
@@ -119,7 +128,7 @@ footer > h2 {
 }
 
 #wbutton {
-  
+  min-width: 150px;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
@@ -156,11 +165,17 @@ footer > h2 {
   color: grey;
   transition: 500ms;
   align-content: space-between;
+  opacity: 50%;
 }
 
 #navigation {
+  top: 0;
+  position: sticky;
   font-size: 5vw;
   text-decoration: none;
+  color: rgb(109, 109, 109);
+  border: solid black 5px;
+  background-color: rgb(255, 228, 196, 0.8);
 }
 
 /*

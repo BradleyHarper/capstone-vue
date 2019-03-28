@@ -23,14 +23,6 @@
       <input id="lightOffButton" type="submit" value="Lights off!">
       </form>
     </div>
-    <div class="buttonselector">
-      <button>small</button>
-      <button>Medium</button>
-      <button>Large</button>
-    </div>
-    <footer>
-      <h2>Please, if you have any questions please feel free to contact me or visit the community forum!</h2>
-    </footer>
   </div>
 </template>
 
