@@ -45,7 +45,7 @@ export default {
 }
 
 * {
-  padding: 5px;
+  /* padding: 5px; */
   font-family: "Indie Flower", cursive;
   font-family: "Dancing Script", cursive;
   text-align: center;
@@ -77,7 +77,7 @@ header {
 }
 
 p {
-  color: black;
+  color: whitesmoke;
 }
 
 footer {
@@ -111,29 +111,7 @@ footer {
   padding: 20px;
 }
 
-#fbutton {
-  min-width: 150px;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-  padding: 5px 15px;
-  border: 0 none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 50px;
-  width: 20vw;
-  max-width: 25vw;
-  height: 20vh;
-  max-height: 30vw;
-  border: 5px black solid;
-  border-radius: 15px;
-  color: black;
-  background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
-  outline: black;
-}
-
-#wbutton {
+#fbutton, #wbutton {
   min-width: 150px;
   flex-direction: row;
   justify-content: space-between;
