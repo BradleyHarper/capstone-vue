@@ -59,7 +59,6 @@ body {
 }
 
 body {
-  border: 5px dotted black;
   display: grid;
   background-color: black;
   background-image: url("https://i.imgur.com/5RoPD1Z.jpg");
@@ -112,6 +111,7 @@ footer {
 }
 
 #fbutton, #wbutton {
+  text-align: center;
   min-width: 150px;
   flex-direction: row;
   justify-content: space-between;
@@ -119,7 +119,7 @@ footer {
   padding: 5px 15px;
   border: 0 none;
   -webkit-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   font-size: 50px;
   width: 20vw;
@@ -127,10 +127,13 @@ footer {
   height: 20vh;
   max-height: 30vw;
   border: 5px black solid;
-  border-radius: 15px;
   color: black;
   background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
   outline: black;
+}
+
+#lightbulb {
+ padding: 10px;
 }
 
 .content {

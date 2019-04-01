@@ -53,9 +53,9 @@ window.onload = function() {
       headers: {
         "Content-Type": "application/json"
       },
-      method: "POST",
-      mode: "no-cors"
-    }).then(Response => Response.ok);
+      method: "POST"
+    }).then(Response => Response.json);
+    console.log(Response.json);
   });
 
   ledOff.addEventListener("click", function ledOffReq() {
@@ -63,9 +63,9 @@ window.onload = function() {
       headers: {
         "Content-Type": "application/json"
       },
-      method: "POST",
-      mode: "no-cors"
-    }).then(Response => response.ok);
+      method: "POST"
+    }).then(Response => Response.json);
+    console.log(Response.json);
   });
 };
 </script>
