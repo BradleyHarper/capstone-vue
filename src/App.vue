@@ -51,11 +51,10 @@ export default {
   text-align: center;
 }
 
-html,
-body {
+html {
   margin: 0;
   padding: 0;
-  /* background-color: bisque; */
+  background-color: grey;
 }
 
 body {
@@ -88,6 +87,7 @@ footer {
 #app > div > h1 {
   position: relative;
 }
+
 #home {
   text-align: center;
 }
@@ -100,6 +100,16 @@ footer {
   box-shadow: 5px 5px 5px black;
   padding: 0px;
   text-align: center;
+  background-color: gray;
+}
+
+#home > h2 {
+  color: bisque;
+  border: 3px solid rgb(255, 228, 196, 0.8);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 #forms {
@@ -107,10 +117,14 @@ footer {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-#fbutton, #wbutton {
+#fbutton,
+#wbutton,
+#lightOffButton,
+#lightOnButton {
   text-align: center;
   min-width: 150px;
   flex-direction: row;
@@ -133,7 +147,7 @@ footer {
 }
 
 #lightbulb {
- padding: 10px;
+  padding: 10px;
 }
 
 .content {

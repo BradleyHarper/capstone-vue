@@ -6,9 +6,10 @@
       <input id="wbutton" type="button" value="Water">
       <input id="fbutton" type="button" value="Feed">
     </div>
+    <h2>Lights control below</h2>
     <div id="lightbulb">
-        <input id="lightOnButton" type="submit" value="Lights on!">
-        <input id="lightOffButton" type="submit" value="Lights off!">
+        <input id="lightOnButton" type="submit" value="On">
+        <input id="lightOffButton" type="submit" value="Off">
       <!--<label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
