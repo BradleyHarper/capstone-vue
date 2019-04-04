@@ -54,16 +54,15 @@ export default {
 html {
   margin: 0;
   padding: 0;
-  background-color: grey;
-}
-
-body {
   display: grid;
   background-color: black;
   background-image: url("https://i.imgur.com/5RoPD1Z.jpg");
   background-size: cover;
-  height: 1000px;
   z-index: 0;
+}
+
+body {
+ 
 }
 
 header {
