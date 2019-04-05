@@ -2,13 +2,13 @@
 
 # capstone-vue
 
-> This is the project I am currently working on for school, however I am incorporating the Vue framework to accomplish a single page application. The other project titled with capstone is almost the same but I was not sucessful including Vue framework. Lack of dependencies and other stuff I didn't feel like diagnosing at the time.
+This is the project I am currently working on for school, however I am incorporating the Vue framework to accomplish a single page application. The other project titled with capstone is almost the same but I was not sucessful including Vue framework. Lack of dependencies and other stuff I didn't feel like diagnosing at the time.
 
 It is an Iot pet feeder for when you're in a rush and you forget to feed your animal(s).
 
 Link to the "failed" project: https://github.com/BradleyHarper/Capstoneproject
 
-in the README.MD you will find more info about the project. If you have any questions regarding the both of them please don't hesitate to ask.
+in the README.MD on the "failed" project page you will find more info about the project. If you have any questions regarding the both of them please don't hesitate to ask.
 
 Thank you!
 
