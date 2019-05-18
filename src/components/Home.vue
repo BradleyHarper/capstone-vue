@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="page">
     <img
-      style="-webkit-user-select: none;" src="http://71.11.135.22:8081/" alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper setup">
+      style="-webkit-user-select: none;" src="http://71.11.135.22:8081/" alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!">
     <div id="forms">
       <input id="wbutton" type="button" value="Water">
       <input id="fbutton" type="button" value="Feed">
@@ -132,5 +132,11 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#home > img {
+  font-size: 3vh;
+  background-color: blanchedalmond;
+  text-decoration: none;
 }
 </style>
