@@ -7,14 +7,8 @@
     </div>
     <header>
       <h1>Sky pet</h1>
-    </header>
-    <transition
-      name="anim"
-      enter-active-class="animated fadeInDown"
-      leave-active-class="animated fadeOutDown"
-    >
+    </header>    
       <router-view/>
-    </transition>
     <footer>
       <div>
         <h2>Please, if you have any questions please feel free to contact me or visit the community forum!</h2>
