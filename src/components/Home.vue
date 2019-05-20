@@ -1,5 +1,6 @@
 <template>
   <div id="home" class="page">
+    <div id="image" ></div>
     <img
       style="-webkit-user-select: none;" src="http://71.11.135.22:8081/" alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!">
     <div id="forms">
@@ -20,7 +21,10 @@
 
 <script>
 export default {
-  name: "Home"
+  name: "Home",
+  methods: {
+
+  }
 };
 
 window.onload = function() {
@@ -138,5 +142,6 @@ input:checked + .slider:before {
   font-size: 3vh;
   background-color: blanchedalmond;
   text-decoration: none;
+  border-radius: 4px;
 }
 </style>
