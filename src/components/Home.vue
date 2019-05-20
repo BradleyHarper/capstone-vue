@@ -1,20 +1,25 @@
 <template>
   <div id="home" class="page">
-    <div id="image" ></div>
+    <div id="image"></div>
     <img
-      style="-webkit-user-select: none;" src="http://71.11.135.22:8081/" alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!">
+      style="-webkit-user-select: none;"
+      src="http://71.11.135.22:8081/"
+      alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!"
+    >
     <div id="forms">
       <input id="wbutton" type="button" value="Water">
       <input id="fbutton" type="button" value="Feed">
     </div>
     <h2>Lights control below</h2>
     <div id="lightbulb">
-        <input id="lightOnButton" type="submit" value="On">
-        <input id="lightOffButton" type="submit" value="Off">
-      <!--<label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>-->
+      <input id="lightOnButton" type="submit" value="On">
+      <input id="lightOffButton" type="submit" value="Off">
+      <div id="switch" >
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
     </div>
   </div>
 </template>
@@ -22,9 +27,7 @@
 <script>
 export default {
   name: "Home",
-  methods: {
-
-  }
+  methods: {}
 };
 
 window.onload = function() {
@@ -79,8 +82,8 @@ window.onload = function() {
 .switch {
   position: relative;
   display: inline-block;
-  width: 6vw;
-  height: 5vh;
+  width: 70px;
+  height: 25px;
 }
 
 /* Hide default HTML checkbox */
@@ -108,11 +111,14 @@ window.onload = function() {
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
-  bottom: 4px;
+  left: 1px;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.slider:after {
+  content: "";
 }
 
 input:checked + .slider {
@@ -124,9 +130,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(43px);
+  -ms-transform: translateX(43px);
+  transform: translateX(43px);
 }
 
 /* Rounded sliders */
