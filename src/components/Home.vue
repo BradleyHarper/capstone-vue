@@ -14,7 +14,7 @@
     <div id="lightbulb">
       <input id="lightOnButton" type="submit" value="On">
       <input id="lightOffButton" type="submit" value="Off">
-      <div id="switch" >
+      <div id="switch">
         <label class="switch">
           <input type="checkbox">
           <span class="slider round"></span>
@@ -35,6 +35,20 @@ window.onload = function() {
   var water = document.getElementById("wbutton");
   var ledOn = document.getElementById("lightOnButton");
   var ledOff = document.getElementById("lightOffButton");
+  var sLed = document.getElementById("switch");
+
+  sLed.addEventListener("click", function ledOnReq() {
+    fetch("http://71.11.135.22:3000/api/led/on", {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    }).then(Response => Response.json);
+    //console.log(Response.json);
+    if (Response.json == undefined){
+      console.log("light ON")
+    }
+  });
 
   food.addEventListener("click", function feedReq() {
     fetch("http://71.11.135.22:3000/api/servo2/sml", {
@@ -63,7 +77,6 @@ window.onload = function() {
       },
       method: "POST"
     }).then(Response => Response.json);
-    console.log(Response.json);
   });
 
   ledOff.addEventListener("click", function ledOffReq() {
@@ -73,7 +86,6 @@ window.onload = function() {
       },
       method: "POST"
     }).then(Response => Response.json);
-    console.log(Response.json);
   });
 };
 </script>
