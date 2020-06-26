@@ -31,65 +31,13 @@ export default {
 };
 
 window.onload = function() {
-  var food = document.getElementById("fbutton");
-  var water = document.getElementById("wbutton");
-  var ledOn = document.getElementById("lightOnButton");
-  var ledOff = document.getElementById("lightOffButton");
-  var sLed = document.getElementById("switch");
+  const food = document.getElementById("fbutton");
+  const water = document.getElementById("wbutton");
+  const ledOn = document.getElementById("lightOnButton");
+  const ledOff = document.getElementById("lightOffButton");
+  const sLed = document.getElementById("switch");
 
-
-  /*
-  sLed.addEventListener("click", function onOffSwitch(){
-    let status = off;
-      if(status = "off"){
-        console.log("off");
-      }else{
-        let status = on;
-        console.log("on");
-      };
-  });
-  */
-
-  /*
-  sLed.addEventListener("click", function test(){
-    let status = true;
-    console.log('on');
-    while(status){
-      if(sLed.addEventListener('click', function turnMeOff(){console.log('umwut')}));{
-        console.log('off');
-      };
-    };
-  });
-  */
-  /*
-  sLed.addEventListener("click", function onOrOff() {
-    let status = false;
-    if (!status) {
-      console.log("led is OFF");
-    } else {
-      console.log("led is ON, but no api call");
-    }
-    fetch("http://71.11.135.22:3000/api/led/on", {
-      headers: {
-        "Content-Type": "application/json"
-      },
-      method: "POST"
-    }).then(Response => Response.json);
-   
-    if (status) {
-      ledOff.addEventListener("click", function ledOffReq() {
-        fetch("http://71.11.135.22:3000/api/led/off", {
-          headers: {
-            "Content-Type": "application/json"
-          },
-          method: "POST"
-        }).then(Response => Response.json);
-      });
-    };
-  });
-  */
-
- var options = ["api/servo2/sml",]
+  const options = ["api/servo2/sml"];
 
   food.addEventListener("click", function feedReq() {
     fetch(`http://71.11.135.22:3000/${options[0]}`, {

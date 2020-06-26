@@ -1,7 +1,7 @@
 <template>
     <div class="page">
     <h1>Contact us</h1>
-    <h2>About the community forum...</h2> 
+    <h2>About the community forum...</h2>
     <p>
         link:   Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores porro voluptatem excepturi cumque debitis? Nam ipsa et aperiam, qui officiis, itaque asperiores quia repudiandae earum porro eos minus pariatur placeat.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod placeat libero et porro distinctio sit itaque minima harum labore deleniti voluptates sunt tempora voluptatibus architecto facilis, quas modi neque qui!
@@ -17,9 +17,8 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus animi cumque ipsam at veritatis reiciendis voluptates accusantium, exercitationem officia facilis delectus incidunt illo eligendi, obcaecati non corrupti modi. Totam, iure.
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem culpa doloremque, beatae sunt quibusdam eveniet! Soluta, assumenda fugiat. Placeat culpa officia facilis beatae explicabo ipsum labore repellendus dolores sapiente temporibus?
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptate ducimus dolorum, harum magni quam reprehenderit voluptatem unde molestiae obcaecati, optio eaque facilis nam! Autem rerum voluptatum deserunt eligendi ipsam!
-        
-    </p>
 
+    </p>
     </div>
 </template>
 
