@@ -7,7 +7,7 @@
     </div>
     <header>
       <h1>Sky pet</h1>
-    </header>    
+    </header>
       <router-view/>
     <footer>
       <div>
@@ -55,10 +55,6 @@ html {
   z-index: 0;
 }
 
-body {
- 
-}
-
 header {
   font-size: 4vw;
   line-height: 0%;
@@ -81,10 +77,6 @@ footer {
   position: relative;
 }
 
-#home {
-  text-align: center;
-}
-
 #home > img {
   width: 500px;
   height: 400px;
@@ -98,7 +90,7 @@ footer {
 
 #home > h2 {
   color: bisque;
-  border: 3px solid rgb(255, 228, 196, 0.8);
+  border: 3px solid rgba(255, 228, 196, 0.8);
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 5px;
@@ -156,7 +148,6 @@ footer {
 }
 
 #navigation a:hover {
-  display: flexbox;
   color: grey;
   transition: 500ms;
   align-content: space-between;
@@ -164,13 +155,15 @@ footer {
 }
 
 #navigation {
+  display: flex;
+  justify-content: space-around;
   top: 0;
   position: sticky;
   font-size: 5vw;
   text-decoration: none;
   color: rgb(109, 109, 109);
   border: solid black 5px;
-  background-color: rgb(255, 228, 196, 0.8);
+  background-color: rgba(255, 228, 196, 0.8);
 }
 
 /*
@@ -186,7 +179,7 @@ footer {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, 
+    transition: background 250ms ease-in-out,
                 transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
