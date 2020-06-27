@@ -11,7 +11,6 @@
       <input id="wbutton" type="button" value="Water">
       <input id="fbutton" type="button" value="Feed">
     </div>
-    <h2>Lights control below</h2>
     <div id="lightbulb">
       <input id="lightOnButton" type="submit" value="On">
       <input id="lightOffButton" type="submit" value="Off">
@@ -65,6 +64,15 @@ window.onload = function() {
 </script>
 
 <style>
+  #forms {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #lightbulb {
+    display: flex;
+    justify-content: space-around;
+  }
 .switch {
   position: relative;
   display: inline-block;
@@ -132,7 +140,7 @@ input:checked + .slider:before {
 
 #home > img {
   font-size: 3vh;
-  background-color: blanchedalmond;
+  background-color: rgba(255, 228, 196, 0.8);;
   text-decoration: none;
   border-radius: 4px;
 }
