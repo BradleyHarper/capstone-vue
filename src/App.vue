@@ -69,7 +69,7 @@ p {
 footer {
   color: black;
   border: solid black 5px;
-  background-color: rgb(255, 228, 196);
+  background-color: rgba(255, 228, 196, 0.8);
 }
 
 #app > div > h1 {
