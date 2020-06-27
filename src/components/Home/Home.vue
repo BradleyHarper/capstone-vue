@@ -4,6 +4,7 @@
     <img
       style="-webkit-user-select: none;"
       src="http://71.11.135.22:8081/"
+      onerror="console.log(`Cannot connect to server...`)"
       alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!"
     >
     <div id="forms">
@@ -14,12 +15,12 @@
     <div id="lightbulb">
       <input id="lightOnButton" type="submit" value="On">
       <input id="lightOffButton" type="submit" value="Off">
-      <div id="switch">
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
+<!--      <div id="switch">-->
+<!--        <label class="switch">-->
+<!--          <input type="checkbox">-->
+<!--          <span class="slider round"></span>-->
+<!--        </label>-->
+<!--      </div>-->
     </div>
   </div>
 </template>
@@ -37,44 +38,28 @@ window.onload = function() {
   const ledOff = document.getElementById("lightOffButton");
   const sLed = document.getElementById("switch");
 
-  const options = ["api/servo2/sml"];
+  const options = {
+    headers: {
+      "Content-Type": "application/json"
+    },
+    method: "POST",
+    mode: "no-cors"
+  };
 
   food.addEventListener("click", function feedReq() {
-    fetch(`http://71.11.135.22:3000/${options[0]}`, {
-      headers: {
-        "Content-Type": "application/json"
-      },
-      method: "POST",
-      mode: "no-cors"
-    }).then(Response => Response.ok);
+    fetch("http://71.11.135.22:3000/api/servo2/sml", options).then(Response => Response.ok);
   });
 
   water.addEventListener("click", function waterReq() {
-    fetch("http://71.11.135.22:3000/api/servo/sml", {
-      headers: {
-        "Content-Type": "application/json"
-      },
-      method: "POST",
-      mode: "no-cors"
-    }).then(Response => Response.ok);
+    fetch("http://71.11.135.22:3000/api/servo/sml", options).then(Response => Response.ok);
   });
 
   ledOn.addEventListener("click", function ledOnReq() {
-    fetch("http://71.11.135.22:3000/api/led/on", {
-      headers: {
-        "Content-Type": "application/json"
-      },
-      method: "POST"
-    }).then(Response => Response.json);
+    fetch("http://71.11.135.22:3000/api/led/on", options).then(Response => Response.json);
   });
 
   ledOff.addEventListener("click", function ledOffReq() {
-    fetch("http://71.11.135.22:3000/api/led/off", {
-      headers: {
-        "Content-Type": "application/json"
-      },
-      method: "POST"
-    }).then(Response => Response.json);
+    fetch("http://71.11.135.22:3000/api/led/off", options).then(Response => Response.json);
   });
 };
 </script>

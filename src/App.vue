@@ -39,7 +39,6 @@ export default {
 }
 
 * {
-  /* padding: 5px; */
   font-family: "Indie Flower", cursive;
   font-family: "Dancing Script", cursive;
   text-align: center;
@@ -49,8 +48,8 @@ html {
   margin: 0;
   padding: 0;
   display: grid;
-  background-color: black;
-  background-image: url("https://i.imgur.com/5RoPD1Z.jpg");
+  background-color: whitesmoke;
+  /*background-image: url("https://i.imgur.com/5RoPD1Z.jpg");*/
   background-size: cover;
   z-index: 0;
 }
@@ -127,7 +126,7 @@ footer {
   max-height: 30vw;
   border: 5px black solid;
   color: black;
-  background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");
+  /*background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");*/
   outline: black;
 }
 
