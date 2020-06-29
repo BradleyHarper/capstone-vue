@@ -2,39 +2,26 @@
   <div id="home" class="page">
     <div id="image"></div>
     <img
-      style="-webkit-user-select: none;"
       src="http://71.11.135.22:8081/"
       alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!"
     >
-    <div id="forms">
+    <div id="feed-buttons">
       <input id="wbutton" type="button" value="Water">
       <input id="fbutton" type="button" value="Feed">
     </div>
     <div id="lightbulb">
       <input id="lightOnButton" type="submit" value="On">
       <input id="lightOffButton" type="submit" value="Off">
-<!--      <div id="switch">-->
-<!--        <label class="switch">-->
-<!--          <input type="checkbox">-->
-<!--          <span class="slider round"></span>-->
-<!--        </label>-->
-<!--      </div>-->
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: "Home",
-  methods: {}
-};
-
 window.onload = function() {
   const food = document.getElementById("fbutton");
   const water = document.getElementById("wbutton");
   const ledOn = document.getElementById("lightOnButton");
   const ledOff = document.getElementById("lightOffButton");
-  const sLed = document.getElementById("switch");
 
   const options = {
     headers: {
@@ -63,78 +50,34 @@ window.onload = function() {
 </script>
 
 <style>
-  #forms {
-    display: flex;
-    justify-content: space-around;
-  }
 
-  #lightbulb {
-    display: flex;
-    justify-content: space-around;
-  }
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 70px;
-  height: 25px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
+#fbutton, #wbutton, #lightOffButton, #lightOnButton {
+  text-align: center;
+  min-width: 150px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 15px;
+  -webkit-border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  font-size: 50px;
+  width: 20vw;
+  max-width: 25vw;
+  height: 20vh;
+  max-height: 30vw;
+  border: 5px black solid;
+  color: black;
+  /*background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");*/
+  outline: black;
+}
+#feed-buttons {
+  display: flex;
+  justify-content: space-around;
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 1px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:after {
-  content: "";
-}
-
-input:checked + .slider {
-  background-color: bisque;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px bisque;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(43px);
-  -ms-transform: translateX(43px);
-  transform: translateX(43px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+#lightbulb {
+  display: flex;
+  justify-content: space-around;
 }
 
 #home > img {

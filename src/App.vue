@@ -47,11 +47,7 @@ export default {
 html {
   margin: 0;
   padding: 0;
-  display: grid;
   background-color: whitesmoke;
-  /*background-image: url("https://i.imgur.com/5RoPD1Z.jpg");*/
-  background-size: cover;
-  z-index: 0;
 }
 
 header {
@@ -87,10 +83,7 @@ footer {
 #home > h2 {
   color: bisque;
   border: 3px solid rgba(255, 228, 196, 0.8);
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin: 5px 50px 10px;
 }
 
 

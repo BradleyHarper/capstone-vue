@@ -13,9 +13,7 @@
 </template>
 
 <script>
-export default {
-    name: 'Instructions'
-}
+
 </script>
 
 <style>
