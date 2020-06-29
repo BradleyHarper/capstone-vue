@@ -79,9 +79,6 @@ footer {
 #home > img {
   width: 500px;
   height: 400px;
-  /* border: 5px rgb(46, 46, 46) dotted; */
-  box-shadow: 800px 1200px #555;
-  box-shadow: 5px 5px 5px black;
   padding: 0px;
   text-align: center;
   background-color: gray;
@@ -96,14 +93,6 @@ footer {
   margin-bottom: 10px;
 }
 
-#forms {
-  display: inline-block;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
 
 #fbutton,
 #wbutton,
@@ -130,17 +119,6 @@ footer {
   outline: black;
 }
 
-#lightbulb {
-  padding: 10px;
-}
-
-.content {
-  display: grid;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-}
-
 #navigation > a {
   text-decoration: none;
   color: black;
@@ -164,40 +142,4 @@ footer {
   border: solid black 5px;
   background-color: rgba(255, 228, 196, 0.8);
 }
-
-/*
-.button {
-    display: inline-block;
-    border: none;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #00e5ed;
-    color: #ffffff;
-    font-family: sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out,
-                transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.button:hover, .button:focus {
-    background: #242424;
-}
-
-.button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
-
-.button:active {
-    transform: scale(0.99);
-}
-
-.buttonselector > button {
-    cursor: pointer;
-} */
 </style>

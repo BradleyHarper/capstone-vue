@@ -4,7 +4,6 @@
     <img
       style="-webkit-user-select: none;"
       src="http://71.11.135.22:8081/"
-      onerror="console.log(`Cannot connect to server...`)"
       alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!"
     >
     <div id="forms">
