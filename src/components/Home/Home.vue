@@ -75,6 +75,20 @@ window.onload = function() {
   justify-content: space-around;
 }
 
+#home > h2 {
+  color: bisque;
+  border: 3px solid rgba(255, 228, 196, 0.8);
+  margin: 5px 50px 10px;
+}
+
+#home > img {
+  width: 500px;
+  height: 400px;
+  padding: 0px;
+  text-align: center;
+  background-color: gray;
+}
+
 #lightbulb {
   display: flex;
   justify-content: space-around;
