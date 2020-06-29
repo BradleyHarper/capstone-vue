@@ -49,7 +49,7 @@ window.onload = function() {
 };
 </script>
 
-<style>
+<style scoped>
 
 #fbutton, #wbutton, #lightOffButton, #lightOnButton {
   text-align: center;
