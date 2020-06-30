@@ -6,11 +6,11 @@
       alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!"
     >
     <div id="feed-buttons">
-      <input id="wbutton" type="button" value="Water">
-      <input id="fbutton" type="button" value="Feed">
+      <input id="wbutton" type="button" value="💧">
+      <input id="fbutton" type="button" value="🍖">
     </div>
     <div id="lightbulb">
-      <input id="lightOnButton" type="submit" value="On">
+      <input id="lightOnButton" type="submit" value="on">
       <input id="lightOffButton" type="submit" value="Off">
     </div>
   </div>
