@@ -19,17 +19,10 @@
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.js");
-
 :root {
   --border-size: 2px;
   --font-size-titles: 25px;
-}
-
-* {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
+  --background-color: rgba(255, 228, 196, 0.8);
 }
 
 #app {
@@ -57,7 +50,7 @@ header {
 footer {
   color: black;
   border-top: solid black var(--border-size);
-  background-color: rgba(255, 228, 196, 0.8);
+  background-color: var(--background-color);
 }
 
 footer > a {
@@ -81,6 +74,6 @@ footer > a {
   justify-content: space-around;
   color: rgb(109, 109, 109);
   border-bottom: solid black 2px;
-  background-color: rgba(255, 228, 196, 0.8);
+  background-color: var(--background-color);
 }
 </style>

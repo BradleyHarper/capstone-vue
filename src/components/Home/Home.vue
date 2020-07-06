@@ -5,13 +5,15 @@
       src="http://71.11.135.22:8081/"
       alt="Looks like the camera feed did not make it to the website! This is where your webcam footage should be. Make sure to refer to your user manual for proper device setup!"
     >
-    <div id="feed-buttons">
-      <input id="wbutton" type="button" value="💧">
-      <input id="fbutton" type="button" value="🍖">
-    </div>
-    <div id="lightbulb">
-      <input id="lightOnButton" type="submit" value="on">
-      <input id="lightOffButton" type="submit" value="Off">
+    <div id="input-buttons">
+      <div id="feed-buttons">
+        <input id="water-button" type="button" value="💧">
+        <input id="food-button" type="button" value="🍖">
+      </div>
+      <div id="light-bulb">
+        <input id="lightOnButton" type="submit" value="on">
+        <input id="lightOffButton" type="submit" value="Off">
+      </div>
     </div>
   </div>
 </template>
@@ -50,58 +52,38 @@ window.onload = function() {
 </script>
 
 <style scoped>
-
-#fbutton, #wbutton, #lightOffButton, #lightOnButton {
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px 15px;
-  -webkit-border-radius: 5px;
-  border-radius: 15px;
+#food-button, #water-button, #lightOffButton, #lightOnButton {
   cursor: pointer;
-  font-size: 4px;
+  font-size: var(--font-size-titles);
   width: 50px;
   height: 50px;
-  border: 5px black solid;
-  color: black;
-  /*background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");*/
-  outline: black;
 }
+
 #feed-buttons {
   display: flex;
   justify-content: space-around;
 }
 
 #home {
-  max-width: 100vw;
+  max-width: 1000px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-#home > h2 {
-  color: bisque;
-  border: 3px solid rgba(255, 228, 196, 0.8);
-  margin: 5px 50px 10px;
+  justify-content: space-around;
 }
 
 #home > img {
   width: 500px;
   height: 400px;
-  padding: 0;
-  text-align: center;
-  background-color: gray;
 }
 
-#lightbulb {
+#light-bulb {
   display: flex;
   justify-content: space-around;
 }
 
 #home > img {
-  font-size: 3vh;
-  background-color: rgba(255, 228, 196, 0.8);;
-  text-decoration: none;
+  font-size: var(--font-size-titles);
   border-radius: 4px;
+  background-color: var(--background-color);
 }
 </style>
