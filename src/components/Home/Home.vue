@@ -53,18 +53,15 @@ window.onload = function() {
 
 #fbutton, #wbutton, #lightOffButton, #lightOnButton {
   text-align: center;
-  min-width: 150px;
   flex-direction: row;
   justify-content: space-between;
   padding: 5px 15px;
   -webkit-border-radius: 5px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 50px;
-  width: 20vw;
-  max-width: 25vw;
-  height: 20vh;
-  max-height: 30vw;
+  font-size: 4px;
+  width: 50px;
+  height: 50px;
   border: 5px black solid;
   color: black;
   /*background: url("https://i.pinimg.com/originals/73/f0/7a/73f07a3b375055159210d24ffd44e9ec.jpg");*/
@@ -73,6 +70,13 @@ window.onload = function() {
 #feed-buttons {
   display: flex;
   justify-content: space-around;
+}
+
+#home {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #home > h2 {
@@ -84,7 +88,7 @@ window.onload = function() {
 #home > img {
   width: 500px;
   height: 400px;
-  padding: 0px;
+  padding: 0;
   text-align: center;
   background-color: gray;
 }

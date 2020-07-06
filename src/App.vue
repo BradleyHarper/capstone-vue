@@ -1,4 +1,4 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
   <div id="app">
     <div id="navigation">
       <router-link to="/">Home</router-link>
@@ -10,22 +10,27 @@
     </header>
       <router-view/>
     <footer>
-      <div>
-        <h2>Please, if you have any questions please feel free to contact me or visit the community forum!</h2>
-      </div>
+        <a>Please, if you have any questions please feel free to contact me or visit the community forum!</a>
     </footer>
   </div>
 </template>
 
 <script>
-export default {
-  name: "App"
-};
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.js");
+
+:root {
+  --border-size: 2px;
+  --font-size-titles: 25px;
+}
+
+* {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -33,13 +38,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  align-content: center;
-  align-items: center;
-}
-
-* {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
 }
 
 html {
@@ -56,41 +54,33 @@ header {
   color: rgb(0, 0, 0);
 }
 
-p {
-  color: whitesmoke;
-}
-
 footer {
   color: black;
-  border: solid black 5px;
+  border-top: solid black var(--border-size);
   background-color: rgba(255, 228, 196, 0.8);
 }
 
-#app > div > h1 {
-  position: relative;
+footer > a {
+  font-size: var(--font-size-titles);
 }
 
 #navigation > a {
+  font-size: var(--font-size-titles);
   text-decoration: none;
   color: black;
 }
 
-#navigation a:hover {
+#navigation > a:hover {
   color: grey;
-  transition: 500ms;
   align-content: space-between;
-  opacity: 50%;
+  opacity: 80%;
 }
 
 #navigation {
   display: flex;
   justify-content: space-around;
-  top: 0;
-  position: sticky;
-  font-size: 5vw;
-  text-decoration: none;
   color: rgb(109, 109, 109);
-  border: solid black 5px;
+  border-bottom: solid black 2px;
   background-color: rgba(255, 228, 196, 0.8);
 }
 </style>
