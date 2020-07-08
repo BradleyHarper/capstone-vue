@@ -5,7 +5,7 @@
       <router-link to="instructions">Instructions</router-link>
       <router-link to="contact">Contact</router-link>
     </div>
-      <router-view style="height: 93.5vh;"/>
+      <router-view style="height: 100vh;"/>
     <footer>
       <a href="https://github.com/BradleyHarper">github</a>
     </footer>
