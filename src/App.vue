@@ -5,9 +5,9 @@
       <router-link to="instructions">Instructions</router-link>
       <router-link to="contact">Contact</router-link>
     </div>
-      <router-view/>
+      <router-view style="height: 93.5vh;"/>
     <footer>
-        <a>Please, if you have any questions please feel free to contact me or visit the community forum!</a>
+      <a href="https://github.com/BradleyHarper">github</a>
     </footer>
   </div>
 </template>
@@ -33,10 +33,8 @@ html {
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
-#app {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+body {
+  margin: 0;
 }
 
 header {
@@ -55,6 +53,13 @@ footer {
 
 footer > a {
   font-size: var(--font-size-titles);
+  background: image("/images/GitHub-Mark-32px.png");
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 #navigation > a {
