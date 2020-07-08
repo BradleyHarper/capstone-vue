@@ -1,5 +1,8 @@
 <template>
   <div id="home" class="page">
+    <header>
+      <h1>Sky pet</h1>
+    </header>
     <div id="image"></div>
     <img
       src="http://71.11.135.22:8081/"
@@ -20,8 +23,8 @@
 
 <script>
 window.onload = function() {
-  const food = document.getElementById("fbutton");
-  const water = document.getElementById("wbutton");
+  const food = document.getElementById("food-button");
+  const water = document.getElementById("water-button");
   const ledOn = document.getElementById("lightOnButton");
   const ledOff = document.getElementById("lightOffButton");
 
@@ -55,6 +58,9 @@ window.onload = function() {
 #food-button, #water-button, #lightOffButton, #lightOnButton {
   cursor: pointer;
   font-size: var(--font-size-titles);
+  background-color: var(--background-color);
+  border: 0;
+  margin: 5px;
   width: 50px;
   height: 50px;
 }
@@ -65,10 +71,10 @@ window.onload = function() {
 }
 
 #home {
-  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
 }
 
 #home > img {
